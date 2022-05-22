@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul,
+li{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#wrap {
+  width: 100%;
+}
+#header {
+  position: fixed;
+  float: left;
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+  z-index: 9999;
+}
+#header .header_all {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100px;
+}
+
+#header .logo {
+  float: left;
+  margin: 5px 65px 0 65px;
+}
+.logo img{
+  width: 100px;
+  height: 75px;
+}
+
+#header .main_mn {
+  float: left;
+  margin-left: 50px;
+}
+#header .main_mn li {
+  float: left;
+  margin-top: 25px;
+  margin-right: 80px;
+}
+#header .main_mn li:last-child {
+  margin-right: 0;
+}
+/* 메인메뉴 글자 */
+#header .main_mn a {
+  font-size: 20px;
+  color: #fff;
+}
+#header .main_mn a:hover{
+  color: red;
+}
+
+/* 컨텐츠 */
+#main_first {
+  display: flex;
+  width: 100%;
+}
+#main_first video {
+  width: 100%;
+}
+#main_second{
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  background-color: #f8f8f8;
+}
+.scope{
+  position: relative;
+  margin: 0 auto;
+  width: 1600px;
+  height: 1000px;
+}
+.scope > span{
+  float:left;
+  margin-top: 220px;
+  margin-left: 250px;
+  font-size: 17px;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #aaa;
+  text-align: center;
+}
+.scope > span > span{
+  font-size: 17px;
+  color: red;
+}
+.scope p{
+  font-size: 45px;
+  color: #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.r_img {
+  float:right;
+}
+/* 뉴스, 주가, 채용 */
+#info{
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+/* 최신뉴스 */
+.news{
+  position: relative;
+  width: 640px;
+  height: 430px;
+  border-right: 1px solid rgba(0, 0, 0, .1);
+}
+.news img{
+  margin-top: 67.5px;
+  width: 640px;
+  height: 365px;
+  opacity: 10%;
+}
+.news_txt{
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+.news_txt > span:nth-child(1){
+  position: absolute;
+  top: 80px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.news_txt h2{
+  margin-top: 150px;
+  font-size: 23px;
+}
+.news_txt p{
+  margin-top: 30px;
+  font-size: 17px;
+  line-height: 1.8;
+}
+.news_txt p:hover{
+  text-decoration:underline;
+  cursor: pointer;
+}
+.news_txt span:nth-child(4){
+  position: absolute;
+  top: 395px;
+  font-size: 18px;
+}
+.news_txt span:nth-child(4):hover{
+  color: red;
+  cursor: pointer;
+}
+
+/* 주가정보 */
+.stock{
+  position: relative;
+  width: 640px;
+  height: 500px;
+}
+.stock img{
+  margin-top: 67.5px;
+  width: 640px;
+  height: 365px;
+  opacity: 10%;
+}
+.stock_txt{
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+.sp{
+  position: absolute;
+  top: 68px;
+  left: -50px;
+  width: 640px;
+  height: 53px;
+  background-color: #FFCECE;
+}
+.sp > p{
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+.stock_txt_box{
+  margin-top: 140px;
+  width: 450px;
+  height: 165px;
+}
+.code{
+  padding-top: 10px;
+  width: 450px;
+  height: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.code p:nth-child(1){
+  float:left;
+  font-size: 18px;
+}
+.code p:nth-child(2){
+  float:right;
+  margin-right: 30px;
+  font-size: 18px;
+}
+
+.l_day{
+  padding-top: 10px;
+  width: 450px;
+  height: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.l_day p:nth-child(1){
+  float:left;
+  font-size: 18px;
+}
+.l_day p:nth-child(2){
+  float:right;
+  margin-right: 35px;
+  font-size: 18px;
+}
+
+.pro{
+  padding-top: 10px;
+  width: 450px;
+  height: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.pro p:nth-child(1){
+  float:left;
+  font-size: 18px;
+}
+.pro p:nth-child(2){
+  float:right;
+  margin-right: 30px;
+  font-size: 18px;
+}
+.stock_txt span:nth-child(3){
+  margin-left: 120px;
+  font-size: 37px;
+}
+.result{
+  position: absolute;
+  top: 380px;
+  width: 640px;
+  height: 53px;
+  background-color: #FFCECE;
+}
+.result > p{
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+.result > p:hover{
+  color: red;
+}
+
+/* 인재채용 */
+.job{
+  position: relative;
+  width: 640px;
+  height: 430px;
+  border-left: solid 1px rgba(0, 0, 0, .1);
+}
+.job img{
+  width: 100%;
+  height: 430px;
+  opacity: 15%;
+}
+.main_txt{
+  position: absolute;
+  top: 60px;
+  left: 150px
+}
+.main_txt > p{
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+.second_txt{
+  position: absolute;
+  top: 170px;
+  left: 150px;
+}
+.second_txt > p{
+  font-size: 17px;
+  text-align: center;
+}
+
+.l_ci{
+  position: absolute;
+  top: 270px;
+  left: 160px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #E6E6E6;
+  cursor: pointer;
+}
+.l_ci:hover{
+  background-color: red;
+  color: #fff;
+}
+.l_ci > p{
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+.r_ci{
+  position: absolute;
+  top: 270px;
+  left: 320px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #E6E6E6;
+  cursor: pointer;
+}
+.r_ci:hover{
+  background-color: red;
+  color: #fff;
+}
+.r_ci > p{
+  margin-top: 38px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* 하단 */
+#footer {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 150px;
+  border-top: 1px solid #444;
+  margin-top: 50px;
+  background-color: #444;
+}
+.territory{
+  margin: 0 auto;
+  width: 1200px;
+  height: 130px;
+}
+.top_btn{
+  float:right;
+  margin: 50px 80px 0 0;
+  border: 1px solid #000;
+  padding: 5px 15px 5px 15px;
+  cursor: pointer;
+  background-color: #000;
+}
+.top_btn:hover{
+  background-color: slategray;
+}
+.top_btn a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+#footer .address {
+  margin: 0 auto;
+  padding-top:5px;
+  padding-bottom:25px;
+  width: 800px;
+  height: 95px;
+}
+
+#footer .bt_logo img {
+  float: left;
+  width: 85px;
+  height: 85px;
+  margin-top: 45px;
+}
+
+/* 사업자번호, 개인정보처리방침 등 */
+.ad_mn {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5px;
+  background-color: #333;  
+}
+#footer .ad_mn li {
+  float: left;
+  margin: 10px 60px 10px 30px;
+  font-style: normal;
+}
+.ad_mn li a{
+  color: #fff;
+  font-size: 17px;
+}
+.ad_mn a:hover{
+  color: red;
+}
+#footer .ad_mn li:nth-child(1) {
+  margin-right:45px;
+}
+#footer .ad_mn li:nth-child(2) {
+  margin-right:45px;
+}
+#footer .ad_mn li:nth-child(3) {
+  margin-right:45px;
+}
+#footer .ad_mn li:nth-child(4) {
+  margin-right:55px;
+}
+
+/* 주소, 번호, 대표이사 */
+#footer .ad_num li {
+  float:left;
+  margin: 55px 0 10px 30px;
+  font-style: normal;
+  font-size:14px;
+  color: #fff;
+}
+#footer .address h3 {
+  float: left;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-left: 30px;
+  color: #fff;
+}
